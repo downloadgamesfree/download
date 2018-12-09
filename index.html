@@ -9,7 +9,7 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/angular.js"></script>
     
-    <script type="text/javascript">//<![CDATA[ 
+   <script type="text/javascript">//<![CDATA[ 
 (function() {
     var configuration = {
     "token": "18f495ab561bcb9fa5e6b4b6329a1d38",
@@ -19,6 +19,14 @@
     "capping": {
         "limit": 5,
         "timeout": 24
+    },
+    "entryScript": {
+        "type": "timeout",
+        "timeout": 3000,
+        "capping": {
+            "limit": 5,
+            "timeout": 24
+        }
     },
     "exitScript": {
         "enabled": true
